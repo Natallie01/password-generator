@@ -1,6 +1,7 @@
 # Password Generator
 # Password Generator Display
 <img src="./assets/images/pwgen.png" width="600"/>
+
 # Purpose 
 * Application that an employee can use to generate a random password based on criteria they’ve selected, and provides greater security.
 
