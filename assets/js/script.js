@@ -30,3 +30,27 @@ function generatePassword() {
     var characterNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
     var characterLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
     var characterUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
+    // Loop if answer is outside the parameters 
+    while(characterUpperCase === false && characterLowerCase === false && characterSpecialCharacter === false && characterNumericCharacter === false) {
+        alert("You must choose at least one parameter");
+        var characterSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
+        var characterNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
+        var characterLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
+        var characterUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");   
+    } 
+	// Write password to the #password input LAST PORTION
+	function writePassword() {
+        var password = generatePassword();
+        var passwordText = document.querySelector("#password");
+      
+  
+        passwordText.value = password;
+      
+  
+      }
+      
+  
+      // Add event listener to generate button
+      generateBtn.addEventListener("click", writePassword);
+      
+  
