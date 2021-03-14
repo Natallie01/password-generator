@@ -21,3 +21,12 @@ function generatePassword() {
         var character = (prompt("How many characters would you like your password to contain?"));
     } 
 }
+      // Repeat back how many charactes the user will have  
+      alert(`Your password will have ${character} characters`);
+
+
+    // Determine parameters of password 
+    var characterSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
+    var characterNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
+    var characterLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
+    var characterUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
